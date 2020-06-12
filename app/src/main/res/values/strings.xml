@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CS193aAndroid</string>
+
+    <string-array name="blockArray">
+        <item>block a</item>
+        <item>block b</item>
+        <item>block c</item>
+        <item>block d</item>
+    </string-array>
 </resources>
