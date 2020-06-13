@@ -85,10 +85,11 @@
 
     </RadioGroup>
 
-    <Spinner
+    <ListView
         android:id="@+id/blocklist"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
 
         android:entries="@array/blockArray"
         app:layout_constraintBottom_toTopOf="@+id/textView"
