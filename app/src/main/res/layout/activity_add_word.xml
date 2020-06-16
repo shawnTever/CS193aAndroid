@@ -4,46 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListAdapters">
+    tools:context=".AddWordActivity">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vocab Builder Game"
-        android:textSize="30sp"
+        android:text="Type in the word you want to add with defination"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/the_word"
+    <EditText
+        android:id="@+id/word_to_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="word"
-        android:textSize="36sp"
+        android:ems="10"
+        android:hint="word to add"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <ListView
-        android:id="@+id/definitions_list"
-        android:layout_width="261dp"
-        android:layout_height="483dp"
-        android:layout_marginTop="30dp"
+    <EditText
+        android:id="@+id/word_defination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="defination"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/the_word" />
+        app:layout_constraintTop_toBottomOf="@+id/word_to_add" />
 
     <Button
-        android:id="@+id/add_word_button"
+        android:id="@+id/add_the_word_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addWordButtonClick"
-        android:text="Add a new word"
+        android:onClick="letsAddWord"
+        android:text="Add word"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/definitions_list" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
