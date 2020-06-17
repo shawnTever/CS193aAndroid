@@ -1,5 +1,6 @@
 package com.example.cs193aandroid
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -113,6 +114,7 @@ class ListAdapters : AppCompatActivity() {
 
         val reader = resources.openRawResource(R.raw.winequalityred).bufferedReader()
         val line = ArrayList<String>()
+        line.clear()
         reader.useLines { lines -> lines.forEach { line.add(it) }}
         for (each in line) {
 //        debug whether the reading function goes well
@@ -121,7 +123,7 @@ class ListAdapters : AppCompatActivity() {
             val pieces = each.split(";")
             if (pieces.size >= 2) {
                 words.add(pieces[0])
-                wordToDefn.put(pieces[0], pieces[1])
+                wordToDefn[pieces[0]] = pieces[1]
             }
         }
 
@@ -143,11 +145,11 @@ class ListAdapters : AppCompatActivity() {
 
 //            val word = myIntent!!.getStringExtra("word")
 //            val defn = myIntent.getStringExtra("defn")
-
             if (myIntent != null) {
                 val word = myIntent.getStringExtra("word")
                 val defn = myIntent.getStringExtra("defn")
-
+                Toast.makeText(this, "Go back word: $word Defn: $defn", Toast.LENGTH_SHORT).show()
+                words.add(word)
                 wordToDefn[word] = defn // wordToDefn.put(word, defn)
             }
         }

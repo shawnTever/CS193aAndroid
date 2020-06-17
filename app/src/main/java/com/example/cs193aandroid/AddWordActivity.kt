@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_add_word.*
 import java.io.PrintStream
 
 class AddWordActivity : AppCompatActivity() {
-    private val WORDS_FILE_NAME = "extrawords.txt"
+    private val WORDS_FILE_NAME = "extraWords.txt"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_word)
@@ -19,7 +19,7 @@ class AddWordActivity : AppCompatActivity() {
     fun letsAddWord(view: View) {
         val word = word_to_add.text.toString()
         val defn = word_defination.text.toString()
-        val line = "$word\t$defn"
+        val line = "$word;$defn"
 
         val outStream = PrintStream(
             openFileOutput(WORDS_FILE_NAME, Context.MODE_PRIVATE))

@@ -41,9 +41,10 @@
         android:id="@+id/add_the_word_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:onClick="letsAddWord"
         android:text="Add word"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_defination" />
 </androidx.constraintlayout.widget.ConstraintLayout>
