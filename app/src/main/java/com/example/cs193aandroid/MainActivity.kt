@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 //            }
 //            block.setImageResource(id)
 //        }
-        blocklist.setOnItemClickListener { list, item, index, id ->
+        blocklist.setOnItemLongClickListener { list, item, index, id ->
 //            Toast.makeText(this, "you clicked item $index with id $id !", Toast.LENGTH_SHORT).show()
             val id = when (index) {
                 0 -> R.drawable.a
@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
                 else -> R.drawable.d
             }
             block.setImageResource(id)
+
+            true
+
         }
     }
 

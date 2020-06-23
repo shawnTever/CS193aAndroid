@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
@@ -154,6 +155,56 @@ class ListAdapters : AppCompatActivity() {
             }
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("marty", "onStart was called")
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Log.i("marty", "onRestoreInstanceState 1 was called")
+
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onRestoreInstanceState(savedInstanceState, persistentState)
+        Log.i("marty", "onRestoreInstanceState 2 was called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("marty", "onResume was called")
+
+    }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+        Log.i("marty", "onSaveInstanceState was called")
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("marty", "onPause was called")
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("marty", "onStop was called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("marty", "onDestroy was called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("marty", "onRestart was called")
+    }
+
 
     private fun showToastNms(n: Long, s: String) {
         val toast = Toast.makeText(this, s, Toast.LENGTH_SHORT)
