@@ -164,6 +164,15 @@ class ListAdapters : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         Log.i("marty", "onRestoreInstanceState 1 was called")
+        val word = savedInstanceState.getString("the_word")
+        the_word.text = word
+        val defns = savedInstanceState.getStringArrayList("defns")
+        if (defns != null) {
+            for (defn in this.defns) this.defns.add(defn)
+            myAdapter = ArrayAdapter<String> (this,
+                android.R.layout.simple_list_item_1, this.defns)
+            definitions_list.adapter = myAdapter
+        }
 
     }
 
@@ -181,6 +190,10 @@ class ListAdapters : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
         super.onSaveInstanceState(outState, outPersistentState)
         Log.i("marty", "onSaveInstanceState was called")
+        val word = the_word.text.toString()
+        Log.i("marty", word)
+        outState.putString("the_word", word)
+        outState.putStringArrayList("defns", defns)
     }
 
 

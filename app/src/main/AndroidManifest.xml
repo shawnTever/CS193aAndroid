@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AddWordActivity"></activity>
-        <activity android:name=".ListAdapters" />
+        <activity android:name=".ListAdapters" android:configChanges="orientation|screenSize"/>
+        <!-- configChanges keep content when rotate the screen -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
