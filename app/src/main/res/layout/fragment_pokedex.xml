@@ -9,6 +9,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TableLayout
+        android:id="@+id/table_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -23,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:src="@drawable/a" />
 
@@ -33,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:src="@drawable/b" />
 
@@ -43,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:adjustViewBounds="true"
                 android:src="@drawable/c" />
 
@@ -61,7 +62,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/d" />
 
             <ImageButton
@@ -71,7 +72,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/e" />
 
             <ImageButton
@@ -81,7 +82,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/f" />
         </TableRow>
 
@@ -97,7 +98,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/g" />
 
             <ImageButton
@@ -107,7 +108,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/h" />
 
             <ImageButton
@@ -117,7 +118,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/i" />
 
         </TableRow>
@@ -134,7 +135,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/j" />
 
             <ImageButton
@@ -144,7 +145,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/green" />
 
             <ImageButton
@@ -154,7 +155,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/white" />
 
         </TableRow>

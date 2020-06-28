@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/pokedex_fragment"
+        android:name="com.example.cs193aandroid.PokedexFragment"
+        android:layout_width="350sp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_pokedex" />
+
+    <fragment
+        android:id="@+id/details_fragment"
+        android:name="com.example.cs193aandroid.DetailsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pokedex_fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

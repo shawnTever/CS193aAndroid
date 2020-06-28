@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val intent = Intent(this@MainActivity, ListAdapters::class.java)
+//        val intent = Intent(this@MainActivity, ListAdapters::class.java)
+        val intent = Intent(this@MainActivity, pokedex::class.java)
         startActivity(intent)
 
 //        blocklist.setOnItemClickListener { list, item, index, id ->
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+
 
 //    when equals if
     fun radioButtonClick(view: View){
