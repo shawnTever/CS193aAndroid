@@ -12,7 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 //        val intent = Intent(this@MainActivity, ListAdapters::class.java)
-        val intent = Intent(this@MainActivity, pokedex::class.java)
+//        val intent = Intent(this@MainActivity, pokedex::class.java)
+        val intent = Intent(this@MainActivity, FlagsActivity::class.java)
         startActivity(intent)
 
 //        blocklist.setOnItemClickListener { list, item, index, id ->
