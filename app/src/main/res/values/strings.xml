@@ -7,6 +7,14 @@
         <item>block c</item>
         <item>block d</item>
     </string-array>
+
+    <string-array name="addressArray">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
